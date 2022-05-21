@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="time.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
             <div id="hours" style="--clr:#ff2972;">00</div>
             <div id="minutes" style="--clr:#fee800;">00</div>
             <div id="seconds" style="--clr:#04fc43;">00</div>
-            <div id="ampm">AM</div>
+            <!-- <div id="ampm">AM</div> -->
         </div>
     </div>
 
@@ -64,9 +65,9 @@
 
             let am = h >= 12 ? "PM" : "AM";
 
-            if (h > 12) {
-                h = h - 12;
-            }
+            // if (h > 12) {
+            //     h = h - 12;
+            // }
 
             h = (h < 10) ? "0" + h : h;
             m = (m < 10) ? "0" + m : m;
